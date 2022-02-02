@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/game.css">
+</head>
+
+<body>
+    <div class="game-box">
+        <div id="start-page">
+            <h2 id="quiz-title">Test your knowledge!</h2>
+            <p class="info">Do your best to answer the multiple choice questions correctly. 
+            A correct answer will earn points while incorrect answers will subtract time off the clock. 
+            Answer as many as you can before the timer runs out!</p>
+            <button onclick="startQuiz();" id="start-btn" type="button" class="btn btn-primary">Start Quiz</button>
+        </div>
+
+        <div id="quiz-page">
+            <h4 id="timer">Timer: 60</h4>
+            <div id="question-text">Question</div>
+                <div id="answer-text">
+                    <button id="btn-1" type="button" class="btn btn-outline-primary">Answer 1</button><br>
+                    <button id="btn-2" type="button" class="btn btn-outline-primary">Answer 2</button><br>
+                    <button id="btn-3" type="button" class="btn btn-outline-primary">Answer 3</button><br>
+                    <button id="btn-4" type="button" class="btn btn-outline-primary">Answer 4</button><br>
+                </div>
+                <div id="check-answer"></div>
+        </div>
+
+        <div class="scores-elements" id="scores-page">
+            <h1>You made it!</h1>
+            <h3>Enter your initials</h3>
+                <input id="user-initials" type="text" placeholder="Your Initials"></input>
+            <p id="highscore"></p>
+            <button id="save-btn" class="btn btn-primary">Save Your Score</button>
+        </div>
+    </div>
+<script src="assets/js/game.js"></script>
+</body>
+
+</html>

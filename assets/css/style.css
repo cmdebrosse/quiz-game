@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.game-box {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: fit-content;
+    padding: 100px;
+}
+
+.btn {
+    margin: 5px;
+}
+
+#show-score {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 20px;
+    max-width: 800px;
+    font-size: 25px;
+}
+
+.hidden-start-page {
+    display: none;
+}
+
+#show-quiz {
+    font-size: 25px;
+}
+
+#scores-page {
+    display: none;
+}
+
+#quiz-page {
+    display: none;
+}

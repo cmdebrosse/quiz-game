@@ -87,7 +87,7 @@ choice1.addEventListener("click", function nextQuestion() {
     else {document.getElementById("check-answer").append("👎")
         timerCount -= 10
 }
-    if (currentQuestion === 2)
+    if (currentQuestion === 5)
         gameOver();
         currentQuestion++
     getQuestion();
